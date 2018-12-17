@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" href="img2/kalash.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link href="bootstrap4-glyphicons/css/bootstrap-glyphicons.min.css" rel="stylesheet" type="text/css" />
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<title>Dream1ngFly</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<style type="text/css">
+			.drophover:hover > .dropdown-menu{
+			display: block;
+			margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-lg navbar yellow bg-warning">
+				<a class="navbar-brand" href="#">Bootstrap made</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item dropdown drophover">
+							<a class="nav-link dropdown-toggle" href="works.html" role="button" aria-haspopup="true" aria-expanded="false">Задания</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="letter.html">SVG</a>
+								<a class="dropdown-item" href="math.html">Формулы</a>
+								<div class="dropdown-divider"></div>
+								<div class="btn-group dropright drophover">
+									<a class="dropdown-toggle dropdown-item" style="cursor: pointer;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Выпадающий список
+									</a>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="#">Пример</a>
+										<a class="dropdown-item" href="#">выпадающего</a>
+										<a class="dropdown-item" href="#">списка</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="letter.html">SVG</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="home.html">Главная</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Задания</li>
+				</ol>
+			</nav>
+			<div class="modal fade" id="myModal">
+				<div class="modal-dialog" role="document">
+					<div class="card border-danger">
+						<div class="card-header bg-danger text-white">
+							Modal fade
+						</div>
+						<div class="card-body">
+							<p>Get out of here</p>
+							<hr>
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-4 col-xl-3">
+						<div id="accordion">
+							
+							<div class="card">
+								<div class="card-header" id="headingOne">
+									<h5 class="mb-0">
+									<button class="btn btn-link" data-toggle="collapse" data-target="#SiteMap" aria-expanded="true" aria-controls="SiteMap">
+									Карта
+									</button>
+									</h5>
+								</div>
+								<div id="SiteMap" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+									<div class="card-body">
+										<a href="home.html">Главная</a>
+										<ul>
+											<li>
+												<a href="works.html">Задания</a>
+												<ul>
+													<li> <a href="letter.html">SVG</a></li>
+													<li><a href="math.html">Формулы</a></li>
+												</ul>
+											</li>
+											<li><a href="#" data-toggle="modal" data-target="#myModal">ExOfModal</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header" id="headingTwo">
+									<h5 class="mb-0">
+									<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#Contacts" aria-expanded="false" aria-controls="Contacts">
+									Контакты
+									</button>
+									</h5>
+								</div>
+								<div id="Contacts" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+									<div class="card-body">
+										<ul>
+											<li><a href="#">Вконтакте</a></li>
+											<li><a href="#">Телеграм</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header" id="headingThree">
+									<h5 class="mb-0">
+									<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									Отправить сообщение
+									</button>
+									</h5>
+								</div>
+								<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+									<div class="card-body">
+										<form>
+											<div class="form-group">
+												<input class="form-control form-control-lg" type="text" placeholder="Ваше имя">
+											</div>
+											<div class="form-group">
+												<label for="emailFormInput1">Ваш почтовый адрес</label>
+												<input type="email" class="form-control" id="emailFormInput1" placeholder="name@example.com">
+											</div>
+											<div class="form-group">
+												<label for="textFormInput1">Сообщение</label>
+												<textarea class="form-control" id="textFormInput1" rows="3"></textarea>
+											</div>
+											<div class="form-group">
+												<input type="submit" class="form-control" id="emailFormInput1" placeholder="name@example.com">
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-8 col-xl-9">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Название</th>
+									<th scope="col">Ссылка</th>
+									<th scope="col">SVG</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>SVG <span class="badge badge-secondary">Unomisey</span></td>
+									<td><a href="letter.html">letter.html</a></td>
+									<td><span class="glyphicon glyphicon-star" aria-hidden="true"></span></td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>Математические формулы <span class="badge badge-secondary">Unomisey</span></td>
+									<td><a href="math.html">math.html</a></td>
+									<td><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

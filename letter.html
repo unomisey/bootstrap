@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" href="img2/kalash.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<title>Dream1ngFly</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			$(function () {$('[data-toggle="tooltip"]').tooltip()})
+		</script>
+		<style type="text/css">
+			.drophover:hover > .dropdown-menu{
+			display: block;
+			margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-lg navbar yellow bg-warning">
+				<a class="navbar-brand" href="#">Bootstrap made</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item dropdown drophover">
+							<a class="nav-link dropdown-toggle" href="works.html" role="button" aria-haspopup="true" aria-expanded="false">Задания</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="letter.html">SVG</a>
+								<a class="dropdown-item" href="math.html">Формулы</a>
+								<div class="dropdown-divider"></div>
+								<div class="btn-group dropright drophover">
+									<a class="dropdown-toggle dropdown-item" style="cursor: pointer;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Выпадающий список
+									</a>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="#">Пример</a>
+										<a class="dropdown-item" href="#">выпадающего</a>
+										<a class="dropdown-item" href="#">списка</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="letter.html">SVG</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="home.html">Главная</a></li>
+					<li class="breadcrumb-item"><a href="works.html">Задания</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Буквы</li>
+				</ol>
+			</nav>
+			<div class="modal fade" id="myModal">
+				<div class="modal-dialog" role="document">
+					<div class="card border-danger">
+						<div class="card-header bg-danger text-white">
+							Modal fade
+						</div>
+						<div class="card-body">
+							<p>Get out of here</p>
+							<hr>
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-4 col-xl-3">
+						<div id="accordion">
+							<div class="card">
+								<div class="card-header" id="headingOne">
+									<h5 class="mb-0">
+									<button class="btn btn-link" data-toggle="collapse" data-target="#SiteMap" aria-expanded="true" aria-controls="SiteMap">
+									Карта 
+									</button>
+									</h5>
+								</div>
+								<div id="SiteMap" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+									<div class="card-body">
+										<a href="home.html">Главная</a>
+										<ul>
+											<li>
+												<a href="works.html">Задания</a>
+												<ul>
+													<li> <a href="letter.html">SVG</a></li>
+													<li><a href="math.html">Формулы</a></li>
+												</ul>
+											</li>
+											<li><a href="#" data-toggle="modal" data-target="#myModal">ExOfModal</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header" id="headingTwo">
+									<h5 class="mb-0">
+									<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#Contacts" aria-expanded="false" aria-controls="Contacts">
+									Контакты
+									</button>
+									</h5>
+								</div>
+								<div id="Contacts" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+									<div class="card-body">
+										<ul>
+											<li><a href="#">Вконтакте</a></li>
+											<li><a href="#">Телеграм</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header" id="headingThree">
+									<h5 class="mb-0">
+									<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									Отправить сообщение
+									</button>
+									</h5>
+								</div>
+								<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+									<div class="card-body">
+										<form action="google.com" method="GET">
+											<div class="form-group">
+												<input name="name" class="form-control form-control-lg" type="text" placeholder="Ваше имя">
+											</div>
+											<div class="form-group">
+												<label for="emailFormInput1">Ваш почтовый адрес</label>
+												<input name="email" type="email" class="form-control" id="emailFormInput1" placeholder="name@example.com">
+											</div>
+											<div class="form-group">
+												<label for="textFormInput1">Сообщение</label>
+												<textarea name="text" class="form-control" id="textFormInput1" rows="3"></textarea>
+											</div>
+											<div class="form-group">
+												<input name="submit" type="submit" class="form-control" id="emailFormInput1" placeholder="name@example.com">
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-8 col-xl-9">
+						<svg data-toggle="tooltip" data-placement="top" title="Мяу"
+							width="198" height="188"
+							viewBox="0 0 198 188"
+							version="1.1"
+							baseProfile="full"
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							xmlns:ev="http://www.w3.org/2001/xml-events">
+							<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="even-odd">
+								<polygon stroke="#979797" stroke-width="10" fill="#1f1cf8"
+								points="20 20 30 90 40 40 "></polygon>
+								<polygon stroke="#979797" stroke-width="10" fill="#1f1cf8"
+								points="190 20 170 90 165 40 "></polygon>
+								<circle cx="100px" cy="100px" r="80px" stroke="#979797" stroke-width="0" fill="#78CBD3" />
+								<polygon stroke="#979797" stroke-width="2" fill="#ff0000"
+								points="100 125 90 110 110 110 "></polygon>
+								<circle cx="130px" cy="80px" r="15px" stroke="#979797" stroke-width="8" fill="#000" />
+								<circle cx="70px" cy="80px" r="15px" stroke="#979797" stroke-width="2" fill="#000" />
+								<circle cx="130px" cy="80px" r="10px" stroke="#979797" stroke-width="2" fill="green" />
+								<circle cx="70px" cy="80px" r="10px" stroke="#979797" stroke-width="2" fill="red" />
+								<polygon stroke="#ff0000" stroke-width="7" fill="#ff0000"
+								points="110 65 150 65"></polygon>
+								<polygon stroke="#ff0000" stroke-width="7" fill="#ff0000"
+								points="50 65 90 65"></polygon>
+								<polygon stroke="#ff0000" stroke-width="3" fill="#ff0000"
+								points="100 120 100 140"></polygon>
+								<polygon stroke="#ff0000" stroke-width="3" fill="#ff0000"
+								points="80 140 120 140"></polygon>
+							</g>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
